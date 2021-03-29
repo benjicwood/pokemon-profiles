@@ -1,11 +1,7 @@
 <template>
-    <!-- <router-link :to="{ name: 'Pokemon', params: { pokemon: 'Charmander' }}"> -->
-     <router-link to="/About">
-    <div @click="viewPokemon(pokemon.url)">
-    <p>{{pokemon.name}}</p>
-      </div>
-      </router-link>
-    <!-- </router-link> -->
+    <router-link :to="{ name: 'PokemonProfile', params: { pokemon: pokemon.name }}">
+        <p>{{pokemon.name}}</p>
+    </router-link>
 </template>
 
 <script>
@@ -17,15 +13,9 @@ export default {
       url: String,
     }
   },
-  methods: {
-    viewPokemon(url) {
-      console.log(url)
-    }
-  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
