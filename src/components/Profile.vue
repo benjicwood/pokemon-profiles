@@ -8,6 +8,7 @@
     <img :src="`${$store.state.selectedPokemon.sprites.front_default}`" alt="" />
     <img :src="`${$store.state.selectedPokemon.sprites.front_shiny}`" alt="" />
     <img :src="`${$store.state.selectedPokemon.sprites.other['official-artwork'].front_default}`" alt="" />
+        <img :src="`${$store.state.selectedPokemon.sprites.versions['generation-v']['black-white'].animated.front_default}`" alt="" />
   </div>
   <div v-else>
     <p>Loading...</p>

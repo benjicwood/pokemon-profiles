@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+      <Filter />
       <PokemonList v-for="(pokemon, index) in $store.state.pokemon" :key="index" :pokemon="pokemon" />
   </div>
 </template>
@@ -7,11 +8,13 @@
 <script>
 import axios from 'axios'
 
+import Filter from '@/components/Filter.vue'
 import PokemonList from '@/components/PokemonList.vue'
 
 export default {
   name: 'Home',
   components: {
+    Filter,
     PokemonList,
   },
   mounted() {
