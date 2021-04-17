@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <!-- <router-link :to="{ name: 'Battle'}">
+      <p>Battle</p>
+    </router-link> -->
       <Filter />
       <PokemonList v-for="(pokemon, index) in $store.state.pokemon" :key="index" :pokemon="pokemon" />
   </div>

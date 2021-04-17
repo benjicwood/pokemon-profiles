@@ -1,5 +1,4 @@
 <template>
-    <p>Filter</p>
     <input
     type="text"
     v-model="filterString"
@@ -28,5 +27,17 @@ export default {
 </script>
 
 <style scoped>
+input {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
+}
+
+input:focus-visible {
+    outline: none;
+}
 
 </style>

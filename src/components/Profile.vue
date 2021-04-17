@@ -1,6 +1,6 @@
 <template>
   <div v-if="pokemon.name === $route.params.pokemon">
-    <p>{{ pokemon.name }} Profile</p>
+    <p>{{ pokemon.name }}</p>
     <div v-for="(type, index) in pokemon.types" :key="index">
       <p>{{ type.type.name }}</p>
     </div>
@@ -37,4 +37,3 @@ export default {
   },
 };
 </script>
-

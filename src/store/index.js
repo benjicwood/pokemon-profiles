@@ -5,6 +5,7 @@ export default createStore({
     pokemon: [],
     pokemonList: [],
     selectedPokemon: [],
+    selectedPokemonType: '',
   },
 
   mutations: {
@@ -14,6 +15,7 @@ export default createStore({
     },
     setPokemonProfile(state, pokemon) {
       state.selectedPokemon = pokemon
+      state.selectedPokemonType = pokemon.types[0].type.name
     },
     filterList(state, filterString) {
       state.pokemon = state.pokemonList.filter(pkmn => {
