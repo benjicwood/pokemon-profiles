@@ -1,7 +1,10 @@
 <template>
+  <router-link to="/">Home</router-link>
+
   <div :class="$store.state.selectedPokemonType">
     <Profile :pokemon="$store.state.selectedPokemon" />
-  </div>
+</div>
+
 </template>
 
 
@@ -23,6 +26,11 @@ export default {
 </script>
 
 <style scoped>
+
+div {
+  border: 1px solid black;
+}
+
 .grass {
   background-color: #ADEAC3;
 }
